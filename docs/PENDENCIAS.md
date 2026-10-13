@@ -138,3 +138,16 @@
 - Mapa de rotas ilustrativo: posições aproximadas, não seguem a geografia real. Faltam endereço, tempos, distâncias e nomes das vias (`[00] min`, `[PREENCHER: via de acesso]`); o botão do Google Maps busca só "Gravataí RS" até haver endereço. Destinos: centro de Gravataí, RS-118, Freeway, Aeroporto Salgado Filho e Porto Alegre.
 - Cartões de "garantir agora": entrada e parcelas `[PREENCHER]`. Dúvidas: respostas `[PREENCHER]`.
 - Renders, coverflow e "item por item" são os do modelo (Vinhedos), com o selo de imagem provisória.
+
+## Harmoni Pampas (2026-10-13)
+
+- Endereço, texto de localização, nº de lotes, metragem mínima, área de lazer, status e condição de lançamento: `[PREENCHER]` na tela.
+- Telefone e WhatsApp do Pampas: `contato.whatsapp` está vazio, então o botão do WhatsApp abre sem número. O Vale usa (51) 99719-6426; confirmar se é o mesmo time.
+- Tempos de deslocamento das placas e o sentido das setas (aproximados a partir de Gravataí; conferir com o endereço).
+- Renders, implantação e lista de lazer do Pampas (hoje: renders e masterplan do Vinhedos com selo, lista modelo da linha Harmoni).
+- Licença das fotos do manual de marca (campo, capim e família no capim).
+- Registro: matrícula, cartório e aprovação da prefeitura de Gravataí.
+- Header com o logo geral Harmoni + "Pampas" em texto: composição nova, validar com a marca. O logo do Pampas é só vertical.
+- Pampas na vitrine (`src/dados/empreendimentos.ts`): ainda não entrou.
+- Copy criada (proposta): "Sua casa no ritmo do campo", "Ver o projeto", "Seu lugar em Gravataí", "Ambientes para viver o dia inteiro", "Antes de escolher, leia com calma", "Seja o primeiro a conhecer o Harmoni Pampas", "Prefere conversar agora? Chame no WhatsApp.", "Você está aqui", texto do hero e descrição de SEO.
+- Material original do cliente estava em `out/pampas` (apagado a cada build). Cópia em `_interno/material-cliente/pampas/`; logo e recortes do manual em `public/img/pampas/`.

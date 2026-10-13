@@ -8,6 +8,8 @@ import "./globals.css";
 const jost = Jost({
   subsets: ["latin"],
   weight: ["200", "300", "400", "500", "600"],
+  // Itálico de verdade para a ênfase dos títulos do Pampas (sem ele o navegador inclina a normal).
+  style: ["normal", "italic"],
   variable: "--fonte-jost",
   display: "swap",
 });

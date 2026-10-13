@@ -5,6 +5,7 @@ import type { SecaoArbore } from "./arbore/tipos";
 import type { SecaoEssenza } from "./essenza/tipos";
 import type { SecaoHortensias } from "./hortensias/tipos";
 import type { SecaoJardins } from "./jardins/tipos";
+import type { SecaoPampas } from "./pampas/tipos";
 import type { SecaoVale } from "./vale/tipos";
 import type { PaginaNoAr } from "./vinhedos/tipos";
 
@@ -202,7 +203,8 @@ export type Secao =
   | SecaoVale
   | SecaoJardins
   | SecaoArbore
-  | SecaoHortensias;
+  | SecaoHortensias
+  | SecaoPampas;
 
 // ---------- página ----------
 
@@ -211,7 +213,7 @@ export type LP = {
   nome: string;
   cidade: string;
   /** Liga a paleta e as animações em src/estilos/lp.css. */
-  tema: "vinhedos" | "jardins" | "arbore" | "vale" | "essenza" | "hortensias";
+  tema: "vinhedos" | "jardins" | "arbore" | "vale" | "essenza" | "hortensias" | "pampas";
   seo: { titulo: string; descricao: string; imagem: string };
   logo: {
     /** Fundo claro. */
@@ -221,7 +223,13 @@ export type LP = {
     /** Altura no header (px). O wordmark horizontal pede menos que o logo quadrado. */
     alturaHeader: number;
   };
-  header: { sobre: "claro" | "escuro"; cta: Link };
+  header: {
+    sobre: "claro" | "escuro";
+    cta: Link;
+    /** Logo geral Harmoni (horizontal) no lugar do logo do empreendimento, com o nome ao lado.
+     *  Para empreendimentos cujo logo é só vertical (Pampas). */
+    marca?: { rotulo: string };
+  };
   contato: {
     telefones: string[];
     /** Só dígitos, com DDI. */

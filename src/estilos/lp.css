@@ -226,6 +226,11 @@ html:has(.lp) { scroll-behavior: smooth; }
 }
 .lph[data-aberto="true"] .lph-barra { background: var(--creme-2); -webkit-backdrop-filter: none; backdrop-filter: none; }
 .lph-marca img { width: auto; height: calc(var(--logo-h) * 0.8); transition: height 0.5s var(--ease); }
+/* logo geral Harmoni no lugar do logo do empreendimento (header.marca no dados.ts) */
+.lph-marca:has(.lph-mh) { display: flex; align-items: center; gap: 14px; }
+.lph-mh { width: auto; height: calc(var(--logo-h) * 0.43); transition: height 0.5s var(--ease); }
+.lph-mh .mh-casa { color: var(--acento); }
+.lph-mh-rot { padding-left: 14px; border-left: 1px solid color-mix(in srgb, currentColor 35%, transparent); font-size: 11px; letter-spacing: 0.34em; line-height: 1.2; text-transform: uppercase; }
 .lph-links, .lph-acoes { display: none; }
 .lph-link {
   display: inline-flex;
@@ -307,6 +312,7 @@ html:has(.lp) { scroll-behavior: smooth; }
   .lph-toggle, .lph-gaveta { display: none !important; }
   .lph-barra { width: min(1440px, 100%); height: 104px; }
   .lph-marca img { height: var(--logo-h); }
+  .lph-mh { height: calc(var(--logo-h) * 0.57); }
   .lph[data-rolou="true"] .lph-barra {
     width: min(1080px, 100% - 32px);
     height: 66px;
@@ -316,6 +322,7 @@ html:has(.lp) { scroll-behavior: smooth; }
     box-shadow: 0 14px 34px -16px rgba(19, 37, 48, 0.42);
   }
   .lph[data-rolou="true"] .lph-marca img { height: calc(var(--logo-h) * 0.78); }
+  .lph[data-rolou="true"] .lph-mh { height: calc(var(--logo-h) * 0.45); }
 }
 
 /* =========================================================

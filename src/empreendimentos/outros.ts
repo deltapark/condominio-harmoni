@@ -12,7 +12,11 @@ const fotos: Record<string, Imagem> = {
   vale: provisoria("salaoExterno"),
   essenza: provisoria("gourmet"),
   hortensias: estiloDeVida.familiaBrincando,
+  pampas: { src: "/img/pampas/manual/familia-capim.webp", largura: 842, altura: 580, alt: "Família abraçada no capim ao entardecer" },
 };
+
+// Harmonis que ainda não estão na vitrine: frase do manual de marca.
+const chamadas: Record<string, string> = { pampas: "Qualidade é viver em harmonia." };
 
 const chamadaVinhedos = "Condomínio horizontal com lotes a partir de 160m².";
 // O Hortênsias ainda não está na coleção da vitrine (só no bloco "Em breve"): vai o título da LP.
@@ -21,5 +25,5 @@ const chamadaHortensias = "Gravataí, em sua mais bela forma.";
 export const cartaoOutro = (slug: string) => ({
   foto: fotos[slug] ?? provisoria("portico"),
   chamada:
-    slug === "vinhedos" ? chamadaVinhedos : slug === "hortensias" ? chamadaHortensias : (harmonis.find((h) => h.slug === slug)?.frase ?? ""),
+    slug === "vinhedos" ? chamadaVinhedos : slug === "hortensias" ? chamadaHortensias : (harmonis.find((h) => h.slug === slug)?.frase ?? chamadas[slug] ?? ""),
 });

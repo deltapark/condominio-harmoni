@@ -6,6 +6,7 @@ import type { LP } from "@/empreendimentos/tipos";
 import { useRolou } from "@/hooks/useRolou";
 import { Ic } from "./Ic";
 import { IconeMenu } from "./IconeMenu";
+import { MarcaHarmoni } from "./MarcaHarmoni";
 
 // header-2: no topo é transparente e ocupa a largura toda; ao rolar encolhe para
 // uma pílula de vidro centralizada. No celular o menu cobre a tela e trava a rolagem.
@@ -43,7 +44,14 @@ export function HeaderLP({ lp }: { lp: LP }) {
     <header className="lph" data-rolou={rolou} data-aberto={aberto} data-escuro={escuro} style={{ ["--logo-h" as string]: `${lp.logo.alturaHeader}px` }}>
       <nav className="lph-barra" aria-label={lp.nome}>
         <a className="lph-marca" href="#inicio" aria-label={`${lp.nome}, ${textosHeader.inicio}`} onClick={() => setAberto(false)}>
-          <img src={logo.src} width={logo.largura} height={logo.altura} alt={lp.nome} />
+          {lp.header.marca ? (
+            <>
+              <MarcaHarmoni className="lph-mh" />
+              <small className="lph-mh-rot">{lp.header.marca.rotulo}</small>
+            </>
+          ) : (
+            <img src={logo.src} width={logo.largura} height={logo.altura} alt={lp.nome} />
+          )}
         </a>
 
         <ul className="lph-links">

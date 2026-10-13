@@ -129,3 +129,12 @@
   - `tiras` (segurança, lazer, infraestrutura, qualidade de vida), `cachos` (o coverflow aprovado, agora sobre a própria foto desfocada e com o título centralizado), `cartoes` ("Quem chega primeiro escolhe melhor", cartões que viram sozinhos), `provas` (fotos reais de obra Nova Harmonia em preto e branco que ganham cor), `itens` (a foto do espaço inunda a seção a partir do cursor), `lotes` (planta ilustrativa clicável; o lote escolhido aparece no contato e vai junto com o cadastro), `frase`, `rotas` (mapa de rotas no estilo de app: destinos, tempo, passos, rota traçada com um ponto andando, zoom), `stand`, `duvidas` e `contato`.
   - O que anda sozinho é CSS (funciona no celular e para com movimento reduzido); nenhum relógio redesenha a página.
   - `FormEtapas` ganhou `extra` (campos que vão junto com o cadastro; o lote também entra na mensagem do WhatsApp). Fotos institucionais novas em `fotosNovaHarmonia` (obra, ciclovia, stand, pôr do sol).
+
+## 2026-10-13 (LP do Harmoni Pampas)
+
+- Nova LP `/pampas` (Gravataí/RS), tradução do protótipo aprovado (combinação H5 · C3 · L8 · P6 · I3 · D1 · O6 · G4 · R1 · K4).
+- Seções exclusivas em `src/empreendimentos/pampas/secoes/`: hero com foto do campo e capim animado em canvas, conceito do manual com palavras que acendem na rolagem, localização em placas de estrada (o céu começa na cor da seção de cima), carrossel 3D, números + lupa na implantação, grade de diferenciais com filtro, antes e depois com fotos reais de obra, empreendimentos da Nova Harmonia, Revista Harmonia e contato com o formulário padrão em uma linha.
+- Tema em `src/estilos/pampas.css` (classes `pp-`), cores do SVG do logo e do manual.
+- Núcleo: `header.marca` opcional no `LP` troca o logo do header pelo logo geral Harmoni com o nome ao lado (`MarcaHarmoni.tsx`, desenhos em `desenhosHarmoni.ts`). As outras LPs não usam e não mudam.
+- Jost passa a carregar o itálico de verdade (ênfase dos títulos do Pampas).
+- Cartões "outros Harmonis" incluem o Pampas, com a foto do manual e o slogan (ele ainda não está na vitrine).

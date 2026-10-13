@@ -75,6 +75,12 @@ Logos gerais do Harmoni (creme, editável, petróleo, geral) ficam em `public/ha
 - `nova-harmonia/institucional/familia.webp` (150 KB)
 - `nova-harmonia/institucional/quem-somos.webp` (2417 KB)
 
+### pampas (9 arquivos)
+
+- `logo/logo-01.svg`, `logo-02.svg`, `logo-03.svg` (originais do cliente, `HARMONI PAMPAS-0N.svg`) e as versões `-recorte` (mesmo desenho, viewBox justo, como nos outros Harmonis).
+- `manual/campo.webp` (620×1080), `manual/capim.webp` (348×348), `manual/familia-capim.webp` (842×580): recortes das fotos do manual de marca. Licença a confirmar.
+- Perspectivas e implantação: renders do Vinhedos com selo de provisória. Obras: fotos de `nova-harmonia/obras/`.
+
 ### vale (3 arquivos)
 
 - `vale/logo/logo-01.svg` (9 KB)
