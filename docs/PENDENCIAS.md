@@ -151,3 +151,19 @@
 - Pampas na vitrine (`src/dados/empreendimentos.ts`): ainda não entrou.
 - Copy criada (proposta): "Sua casa no ritmo do campo", "Ver o projeto", "Seu lugar em Gravataí", "Ambientes para viver o dia inteiro", "Antes de escolher, leia com calma", "Seja o primeiro a conhecer o Harmoni Pampas", "Prefere conversar agora? Chame no WhatsApp.", "Você está aqui", texto do hero e descrição de SEO.
 - Material original do cliente estava em `out/pampas` (apagado a cada build). Cópia em `_interno/material-cliente/pampas/`; logo e recortes do manual em `public/img/pampas/`.
+
+## Harmoni Serra (2026-10-13)
+
+- Endereço, texto de localização, nº de lotes, tempos de deslocamento, WhatsApp e endereço do stand: `[PREENCHER]` na tela.
+- Telefone e WhatsApp do Serra: `contato.whatsapp` está vazio, então o botão do WhatsApp abre sem número.
+- Posições dos destinos nas curvas de nível são ilustrativas (as mesmas do Pampas, ambos em Gravataí); conferir com o endereço.
+- Renders, implantação, legenda da planta e lista de lazer do Serra (hoje: renders, masterplan e legenda do Vinhedos com selo, lista modelo da linha Harmoni).
+- Licença das fotos do manual de marca (rocha da capa e KV).
+- Rocha de dois cumes do manual usada como símbolo: confirmar se pode, já que não se sabe se é uma formação real perto de Gravataí.
+- Manual do Serra, slide do conceito: "Um ambient pensado..." foi corrigido para "Um ambiente pensado..." na LP. Confirmar com o cliente.
+- Título de "Como construímos" já usado nas LPs: "Infraestrutura a altura do padrão Nova Harmonia de qualidade" (falta a crase em "à altura"). Sinalizado, não corrigido.
+- Registro: matrícula, cartório e aprovação da prefeitura de Gravataí.
+- Header com o logo geral Harmoni + "Serra" em texto (mesma composição do Pampas): validar com a marca.
+- Serra na vitrine (`src/dados/empreendimentos.ts`): ainda não entrou.
+- Copy criada (proposta): "Uma identidade construída ao longo do tempo" (adaptada do texto do manual), "Ver o projeto", rótulos dos mirantes "Imponência", "Solidez" e "Raízes", "Seu lugar em Gravataí", "Ambientes para viver o dia inteiro", "Infraestrutura e lazer, item por item", "Seja o primeiro a conhecer o Harmoni Serra", "Fale direto com um consultor", a nota do mapa, texto do hero e descrição de SEO.
+- Material original do cliente estava em `out/serra` (apagado a cada build). Cópia em `_interno/material-cliente/serra/`; logo e recortes do manual em `public/img/serra/`.

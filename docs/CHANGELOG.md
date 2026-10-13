@@ -138,3 +138,12 @@
 - Núcleo: `header.marca` opcional no `LP` troca o logo do header pelo logo geral Harmoni com o nome ao lado (`MarcaHarmoni.tsx`, desenhos em `desenhosHarmoni.ts`). As outras LPs não usam e não mudam.
 - Jost passa a carregar o itálico de verdade (ênfase dos títulos do Pampas).
 - Cartões "outros Harmonis" incluem o Pampas, com a foto do manual e o slogan (ele ainda não está na vitrine).
+
+## 2026-10-13 (LP do Harmoni Serra)
+
+- Nova LP `/serra` (Gravataí/RS), tradução do protótipo aprovado (combinação H7 · C15 · L9 · P10 · I9 · D9 · O9 · G4 · K3, motivo C).
+- Seções exclusivas em `src/empreendimentos/serra/secoes/`: hero na composição da capa do manual (logo completo, rocha em camadas, fios dourados descendo e neblina no pé), conceito com a serra de três cumes no laranja (cada cume abre um trecho do texto do manual e o sol vai até ele), localização em curvas de nível com zoom, arraste, filtros e rota até o destino, perspectivas em faixas com borda de rocha, implantação como prancha técnica sobre curvas de nível, diferenciais em camadas por categoria, obra em corte da rua que a rolagem "escava" do poste até a drenagem e contato com o WhatsApp em destaque.
+- `Ambiente.tsx`: canvas com serras em planos, fios de rocha com brilho correndo e neblina que se abre com o ponteiro (substitui o capim do Pampas). Para fora da tela e com movimento reduzido.
+- Desenhos gerados em código em `serra/desenhos.ts` (serra, curvas de nível, corte), sem imagem.
+- Tema em `src/estilos/serra.css` (classes `sr-`), mesma paleta do Pampas. Reaproveita a base `pp-` do Pampas (sobretítulo, títulos, entrada ao rolar) e a seção de empreendimentos da Nova Harmonia direto pelo `dados.ts` (`tipo: "pampas", secao: "regioes"`), sem copiar componente.
+- Cartões "outros Harmonis" incluem o Serra, com a foto do KV e o slogan.

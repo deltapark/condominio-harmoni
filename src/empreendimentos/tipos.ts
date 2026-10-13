@@ -6,6 +6,7 @@ import type { SecaoEssenza } from "./essenza/tipos";
 import type { SecaoHortensias } from "./hortensias/tipos";
 import type { SecaoJardins } from "./jardins/tipos";
 import type { SecaoPampas } from "./pampas/tipos";
+import type { SecaoSerra } from "./serra/tipos";
 import type { SecaoVale } from "./vale/tipos";
 import type { PaginaNoAr } from "./vinhedos/tipos";
 
@@ -204,7 +205,8 @@ export type Secao =
   | SecaoJardins
   | SecaoArbore
   | SecaoHortensias
-  | SecaoPampas;
+  | SecaoPampas
+  | SecaoSerra;
 
 // ---------- página ----------
 
@@ -213,7 +215,7 @@ export type LP = {
   nome: string;
   cidade: string;
   /** Liga a paleta e as animações em src/estilos/lp.css. */
-  tema: "vinhedos" | "jardins" | "arbore" | "vale" | "essenza" | "hortensias" | "pampas";
+  tema: "vinhedos" | "jardins" | "arbore" | "vale" | "essenza" | "hortensias" | "pampas" | "serra";
   seo: { titulo: string; descricao: string; imagem: string };
   logo: {
     /** Fundo claro. */
@@ -227,7 +229,7 @@ export type LP = {
     sobre: "claro" | "escuro";
     cta: Link;
     /** Logo geral Harmoni (horizontal) no lugar do logo do empreendimento, com o nome ao lado.
-     *  Para empreendimentos cujo logo é só vertical (Pampas). */
+     *  Para empreendimentos cujo logo é só vertical (Pampas, Serra). */
     marca?: { rotulo: string };
   };
   contato: {
